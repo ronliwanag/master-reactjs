@@ -9,6 +9,7 @@ import Card1 from "./components/card1";
 import Card2 from "./components/card2";
 import Card3 from "./components/card3";
 import Footer from "./components/footer";
+import TaskContainer from "./components/tasks/taskcontainer.jsx";
 
 import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
 
@@ -16,10 +17,12 @@ var Board = React.createClass({
   render: function() {
  
   return (
-            <div className="container text-center"> 
+            <div className="container text-center">
+                <div className="panel panel-body"><TaskContainer /></div> 
                 <div className="panel panel-default">
                     <div className="panel-heading"><Header name="Header" /></div>
                     <div className="panel panel-body"><Hero name="Hero" /></div>
+                    
                     
                     
                     <div className="panel panel-body"><Section name="Section" /></div>
